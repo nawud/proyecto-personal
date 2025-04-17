@@ -4,7 +4,7 @@ import autoprefixer from 'autoprefixer';
 
 export default {
   plugins: [
-    nesting(), // <- Esto debe ir PRIMERO
+    nesting(), 
     tailwindcss(),
     autoprefixer(),
   ],

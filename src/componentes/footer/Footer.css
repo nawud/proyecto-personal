@@ -1,29 +1,25 @@
-/* Estilos base */
 .footer {
-    background: linear-gradient(to right, #1a1a1a, #2d2d2d);
-    color: #ffffff;
-    padding: 1.5rem 0; /* Espacio más ajustado */
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* Contenedor del footer en línea */
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Permite que se ajuste en móviles */
-  }
-  
- /* Links del footer en línea (por defecto) */
+  background: linear-gradient(to right, #1a1a1a, #2d2d2d);
+  color: #ffffff;
+  padding: 1.5rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .footer-links {
   display: flex;
   gap: 1.5rem;
-  justify-content: center; /* Centrar los links por defecto */
-  margin-bottom: 1rem; /* Añadir un margen inferior para la disposición en línea */
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .footer-link {
@@ -36,10 +32,9 @@
   color: #ff4444;
 }
 
-/* Contacto centrado (por defecto) */
 .contact-section {
   text-align: center;
-  margin-bottom: 1rem; /* Añadir un margen inferior para la disposición en línea */
+  margin-bottom: 1rem;
 }
 
 .contact-email {
@@ -52,12 +47,11 @@
   text-decoration: underline;
 }
 
-/* Redes sociales en línea (por defecto) */
 .social-links {
   display: flex;
   gap: 1rem;
-  justify-content: center; /* Centrar los iconos por defecto */
-  margin-bottom: 1rem; /* Añadir un margen inferior para la disposición en línea */
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .social-link {
@@ -73,10 +67,9 @@
   color: #ff4444;
 }
 
-/* Botón centrado (por defecto) */
 .back-to-top {
-  display: block; /* Cambiado a block para que ocupe su propia línea por defecto */
-  margin: 1rem auto; /* Centrar y añadir margen */
+  display: block;
+  margin: 1rem auto;
   padding: 0.8rem 1.5rem;
   background: #ff4444;
   color: white;
@@ -96,41 +89,39 @@
   box-shadow: 0 4px 12px rgba(255, 68, 68, 0.2);
 }
 
-/* Estilos para portátiles y superiores (en línea) */
 @media (min-width: 769px) {
   .footer-container {
     display: flex;
-    justify-content: space-around; /* Distribuye los elementos principales en línea */
-    align-items: center; /* Alinea verticalmente los elementos */
-    padding: 2rem; /* Añade un poco de padding al contenedor para espaciado */
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
   }
 
   .footer-links {
-    margin-bottom: 0; /* Elimina el margen inferior para la disposición en línea */
+    margin-bottom: 0;
   }
 
   .contact-section {
-    text-align: left; /* Alinea el texto a la izquierda en pantallas más grandes */
-    margin-bottom: 0; /* Elimina el margen inferior */
+    text-align: left;
+    margin-bottom: 0;
   }
 
   .social-links {
-    margin-bottom: 0; /* Elimina el margen inferior */
+    margin-bottom: 0;
   }
 
   .back-to-top {
-    display: block; /* Asegura que siga siendo un bloque */
-    margin: 0; /* Elimina el margen para que se alinee con los otros elementos */
+    display: block;
+    margin: 0;
   }
 }
 
-/* Responsividad para móviles (como estaba) */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 0.5rem; /* Añade un poco de padding al contenedor móvil también */
+    padding: 0.5rem;
   }
 
   .footer-links {

@@ -1,4 +1,3 @@
-/* Estilos base */
 .header-bg {
   background-color: #1c1b1b;
   color: white;
@@ -10,7 +9,6 @@
   z-index: 1000;
 }
 
-/* Estilos para el logo responsivo */
 .logo-img {
   height: 40px;
   max-width: 100%;
@@ -70,7 +68,6 @@
   width: 100%;
 }
 
-/* Estilos para móvil */
 @media (max-width: 768px) {
   body {
     padding-top: 60px;
@@ -148,26 +145,22 @@
   }
 }
 
-/* Tamaños medianos */
 @media (min-width: 769px) and (max-width: 1024px) {
   .logo-img {
     height: 35px;
   }
 }
 
-/* Tamaños grandes */
 @media (min-width: 1025px) {
   .logo-img {
     height: 40px;
   }
 }
 
-/* Animación para el menú hamburguesa */
 .hamburguesa .barra {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Efectos hover adicionales para escritorio */
 @media (min-width: 769px) {
   .hover\:scale-110:hover {
     @media (hover: hover) {

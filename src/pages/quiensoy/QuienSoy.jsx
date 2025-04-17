@@ -7,11 +7,11 @@ function QuienSoy() {
     <section id="Quiensoy" className="bg-gray-900 text-white py-12 quiensoy-section">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">QUIEN SOY</h2>
-        <div className="image-container-wrapper"> {/* Nuevo div padre para las imágenes */}
-          <div className="image-container"> {/* Div para la primera imagen */}
+        <div className="image-container-wrapper">
+          <div className="image-container">
             <img src={yopc} alt="Miller Duwan" className="rounded-lg shadow-lg individual-image" />
           </div>
-          <div className="image-container"> {/* Div para la segunda imagen */}
+          <div className="image-container">
             <img src={yopc2} alt="Miller Duwan" className="rounded-lg shadow-lg individual-image" />
           </div>
         </div>
@@ -29,5 +29,3 @@ function QuienSoy() {
     </section>
   );
 }
-
-export default QuienSoy;

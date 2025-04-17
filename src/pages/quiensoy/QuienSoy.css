@@ -1,22 +1,22 @@
-/* Estilos base para prevenir scroll horizontal en toda la sección */
 .quiensoy-section {
   margin-top: 70px;
+  margin-bottom: 50px;
   overflow-x: hidden;
   width: 100%;
 }
 
-/* Ajustes para que el contenedor no cause overflow */
 .container {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-/* Asegurar que los párrafos de texto se ajusten correctamente */
 .quiensoy-section p {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  max-width: 100%;
+  line-height: 1.8;
+  margin: 20px auto;
+  padding: 0 1rem;
 }
 
 @media (max-width: 767px) {
@@ -25,12 +25,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 100%;
     padding: 0 10px;
   }
 
   .quiensoy-section {
     margin-top: 70px;
+    margin-bottom: 40px;
   }
 
   .image-container {
@@ -49,13 +49,16 @@
     max-width: 100%;
     object-fit: contain;
   }
-  
-  /* Ajustar el padding del texto en móviles */
+
   .quiensoy-section p {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 16px; /* Tamaño de texto ligeramente menor para móviles */
-    text-align: left; /* Alineación a la izquierda es mejor para lectura en móviles */
+    margin-right: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    text-align: justify;
+    line-height: 1.6;
   }
 }
 
@@ -86,5 +89,14 @@
 
   .quiensoy-section {
     margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .quiensoy-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-right: 0.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }

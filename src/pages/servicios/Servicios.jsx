@@ -1,4 +1,4 @@
-import "./Servicios.css"; // Importa el archivo CSS para estilos personalizados
+import "./Servicios.css";
 
 function Servicios() {
   return (

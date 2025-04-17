@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/img/logowan.png"; // Asegúrate de que la ruta sea correcta
-import "./Preloader.css"; // Importa el CSS
+import logo from "../../assets/img/logowan.png";
+import "./Preloader.css";
 
 function Preloader() {
   const [isLoading, setIsLoading] = useState(true);

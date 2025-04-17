@@ -1,31 +1,74 @@
 .logo-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente el logo */
-  margin-bottom: 2rem; /* Espacio debajo del logo */
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .logo-imagen {
-  width: 80%; /* Mantiene la responsividad */
-  max-width: 400px; /* Aumenta el ancho máximo en general */
+  width: 80%;
+  max-width: 400px;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.inicio-section {
+  margin-top: 70px;
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.inicio-section p {
+  text-align: justify; /* Justifica el texto */
+  word-wrap: break-word; /* Ajusta palabras largas */
+  overflow-wrap: break-word; /* Compatibilidad adicional */
+  line-height: 1.8; /* Mejora la legibilidad */
+  margin: 0 auto; /* Centra los párrafos */
+  padding: 0 1rem; /* Espaciado interno uniforme */
+  margin-right: 0.5rem; /* Espaciado extra en el lado derecho */
+}
+
 @media (max-width: 767px) {
+  .inicio-section p {
+    font-size: 0.875rem; /* Reduce el tamaño de la fuente para móviles */
+    text-align: justify;
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+    padding: 0.5rem; /* Menor margen interno en móviles */
+    margin-right: 1.8rem; /* Más margen para prevenir cortes */
+  }
+
   .inicio-section {
-    margin-top:70px; /* Ajusta este valor para móviles según la altura de tu header móvil */
+    margin-top: 60px; /* Ajusta el margen superior para móviles */
   }
 }
 
-/* Ajustar el tamaño del logo en pantallas más grandes */
 @media (min-width: 768px) {
   .logo-imagen {
-    max-width: 500px; /* Aumenta el ancho máximo en pantallas grandes */
-  }
-  .inicio-section {
-    margin-top: 60px; /* Margen superior para escritorio y tablets (ajusta según sea necesario) */
-    overflow-x: hidden;
+    max-width: 500px;
   }
 
- 
+  .inicio-section {
+    margin-top: 60px; /* Ajusta el margen superior para pantallas grandes */
+  }
+
+  .inicio-section p {
+    font-size: 1rem; /* Fuente estándar para pantallas más grandes */
+    line-height: 1.8;
+    margin-right: 0.5rem; /* Mantén margen adecuado en pantallas grandes */
+  }
+}
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .inicio-section {
+    margin-top: 60px; /* Margen superior para pantallas grandes */
+  }
+
+  .inicio-section p {
+    font-size: 1.125rem; /* Fuente más grande para pantallas grandes */
+    line-height: 1.8; /* Espaciado mayor entre líneas */
+    padding: 0 2rem; /* Mayor espacio interno */
+  }
+
+  .logo-imagen {
+    max-width: 500px; /* Tamaño máximo del logo en pantallas grandes */
+  }
 }
