@@ -1,0 +1,90 @@
+/* Estilos base para prevenir scroll horizontal en toda la sección */
+.quiensoy-section {
+  margin-top: 70px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ajustes para que el contenedor no cause overflow */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Asegurar que los párrafos de texto se ajusten correctamente */
+.quiensoy-section p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .image-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .quiensoy-section {
+    margin-top: 70px;
+  }
+
+  .image-container {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .image-container:last-child {
+    margin-bottom: 0;
+  }
+
+  .individual-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  /* Ajustar el padding del texto en móviles */
+  .quiensoy-section p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px; /* Tamaño de texto ligeramente menor para móviles */
+    text-align: left; /* Alineación a la izquierda es mejor para lectura en móviles */
+  }
+}
+
+@media (min-width: 768px) {
+  .image-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .image-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  .individual-image {
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 300px;
+  }
+
+  .quiensoy-section {
+    margin-top: 60px;
+  }
+}

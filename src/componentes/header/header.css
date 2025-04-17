@@ -1,0 +1,184 @@
+/* Estilos base */
+.header-bg {
+  background-color: #1c1b1b;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Estilos para el logo responsivo */
+.logo-img {
+  height: 40px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.hamburguesa {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.barra {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+  transform-origin: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+  padding: 0.5rem 0.75rem;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fe0002;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 1rem;
+    position: relative;
+  }
+
+  .barra {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 4px 0;
+    margin-right: 15px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #1c1b1b;
+    width: 100%;
+    height: calc(100vh - 60px);
+    align-items: center;
+    padding: 2rem 1rem;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%);
+    overflow-y: auto;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
+
+  .menu.activo {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hamburguesa.activo .barra:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburguesa.activo .barra:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguesa.activo .barra:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Tamaños medianos */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo-img {
+    height: 35px;
+  }
+}
+
+/* Tamaños grandes */
+@media (min-width: 1025px) {
+  .logo-img {
+    height: 40px;
+  }
+}
+
+/* Animación para el menú hamburguesa */
+.hamburguesa .barra {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Efectos hover adicionales para escritorio */
+@media (min-width: 769px) {
+  .hover\:scale-110:hover {
+    @media (hover: hover) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  .menu {
+    padding-right: 1rem;
+  }
+}

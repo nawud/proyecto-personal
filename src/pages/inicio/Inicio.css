@@ -1,0 +1,31 @@
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el logo */
+  margin-bottom: 2rem; /* Espacio debajo del logo */
+}
+
+.logo-imagen {
+  width: 80%; /* Mantiene la responsividad */
+  max-width: 400px; /* Aumenta el ancho máximo en general */
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .inicio-section {
+    margin-top:70px; /* Ajusta este valor para móviles según la altura de tu header móvil */
+  }
+}
+
+/* Ajustar el tamaño del logo en pantallas más grandes */
+@media (min-width: 768px) {
+  .logo-imagen {
+    max-width: 500px; /* Aumenta el ancho máximo en pantallas grandes */
+  }
+  .inicio-section {
+    margin-top: 60px; /* Margen superior para escritorio y tablets (ajusta según sea necesario) */
+    overflow-x: hidden;
+  }
+
+ 
+}
