@@ -1,74 +1,88 @@
 .quiensoy-section {
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-top: 70px; /* Espaciado superior de la sección */
+  margin-bottom: 50px; /* Espaciado inferior para separar del footer */
   overflow-x: hidden;
   width: 100%;
+  text-align: center; /* Centra el contenido por defecto */
 }
 
-.container {
-  max-width: 100%;
-  overflow-x: hidden;
+.quiensoy-section h2 {
+  color: #ff4d4d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #ff4d4d;
+  display: inline-block;
+  margin: 0 auto; /* Centra horizontalmente el h2 */
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  margin-top: 100px;
+}
+
+.image-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre imágenes */
+  margin: 20px auto; /* Centra el contenedor */
+}
+
+.image-container {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 1.5rem; /* Espaciado inferior para imágenes */
+}
+
+.individual-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .quiensoy-section p {
   word-wrap: break-word;
   overflow-wrap: break-word;
-  hyphens: auto;
-  line-height: 1.8;
-  margin: 20px auto;
-  padding: 0 1rem;
+  hyphens: auto; /* Habilita guiones automáticos para cortes de palabras */
+  line-height: 1.8; /* Mejora la legibilidad */
+  margin: 20px auto; /* Margen superior e inferior */
+  padding: 0 1rem; /* Espaciado interno para el texto */
+  text-align: justify; /* Justifica el texto */
 }
 
-@media (max-width: 767px) {
-  .image-container-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0 10px;
-  }
-
+/* Ajustes para móviles */
+@media (max-width: 768px) {
   .quiensoy-section {
     margin-top: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Ajusta el espaciado inferior para móviles */
+  }
+
+  .quiensoy-section h2 {
+    font-size: 1.8rem; /* Tamaño más pequeño para el h2 */
+    margin: 0 auto;
+    margin-top: 70px; /* Ajusta margen superior */
   }
 
   .image-container {
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 2rem;
-  }
-
-  .image-container:last-child {
-    margin-bottom: 0;
-  }
-
-  .individual-image {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    object-fit: contain;
+    max-width: 80%;
+    margin-bottom: 1.5rem; /* Añade más separación inferior */
   }
 
   .quiensoy-section p {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 1.8rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 0.875rem;
-    text-align: justify;
-    line-height: 1.6;
+    font-size: 0.875rem; /* Tamaño de texto reducido para móviles */
+    line-height: 1.6; /* Ajusta el espaciado entre líneas */
+    padding: 0 10px; /* Espaciado interno adicional */
+    margin-right: 1.5rem; /* Añade margen adicional a la derecha */
   }
 }
 
+/* Ajustes para pantallas grandes */
 @media (min-width: 768px) {
   .image-container-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    flex-direction: row;
+    gap: 20px; /* Espaciado entre imágenes */
+    flex-direction: row; /* Coloca imágenes lado a lado */
     width: 100%;
   }
 
@@ -88,15 +102,15 @@
   }
 
   .quiensoy-section {
-    margin-top: 60px;
+    margin-top: 60px; /* Ajusta el margen superior para pantallas grandes */
     margin-bottom: 50px;
   }
 
   .quiensoy-section p {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-right: 0.5rem;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 1rem; /* Tamaño de texto más grande */
+    line-height: 1.8; /* Espaciado entre líneas mayor */
+    margin-top: 30px; /* Separación del texto con las imágenes */
+    margin-bottom: 30px; /* Separación del texto con el footer */
+    margin-right: 0.5rem; /* Ajusta el margen derecho */
   }
 }

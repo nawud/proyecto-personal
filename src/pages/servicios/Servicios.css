@@ -1,9 +1,9 @@
 #Servicios {
-    color: #0b0b0b;
-    padding: 2rem 1rem;
-    text-align: center;
-    overflow-x: hidden;
-  }
+  color: #0b0b0b;
+  padding: 2rem 1rem;
+  text-align: center; /* Centra el texto por defecto */
+  overflow-x: hidden;
+}
   
   .container {
     max-width: 1200px;
@@ -17,6 +17,7 @@
     letter-spacing: 2px;
     border-bottom: 2px solid #ff4d4d;
     display: inline-block;
+    margin: 0 auto; /* Centra el h1 horizontalmente */
     margin-bottom: 2rem;
     padding-bottom: 0.5rem;
     margin-top: 100px;
@@ -58,10 +59,12 @@
   }
   
   @media (max-width: 768px) {
-    #Servicios {
-      padding: 1rem;
-      text-align: left;
+    #Servicios h1 {
+      font-size: 1.8rem; /* Ajusta el tamaño para móviles */
+      margin: 0 auto; /* Asegura el centrado horizontal */
+      margin-top: 70px; /* Ajusta margen superior */
     }
+  
   
     h1 {
       font-size: 1.8rem;
