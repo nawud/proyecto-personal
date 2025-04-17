@@ -1,12 +1,12 @@
 #Servicios {
   color: #0b0b0b;
   padding: 2rem 1rem;
-  text-align: center; /* Centra el texto por defecto */
-  overflow-x: hidden; /* Previene scroll horizontal */
+  text-align: center;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 100%; /* Asegura que el contenedor no desborde */
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   overflow-x: hidden;
@@ -18,7 +18,7 @@
   letter-spacing: 2px;
   border-bottom: 2px solid #ff4d4d;
   display: inline-block;
-  margin: 0 auto; /* Centra el h1 horizontalmente */
+  margin: 0 auto;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   margin-top: 100px;
@@ -31,10 +31,9 @@
 
 .grid-cols-1 {
   grid-template-columns: 1fr;
-  text-align: left; /* Alinea el contenido a la izquierda */
+  text-align: left;
 }
 
-/* Ajustes para pantallas grandes */
 @media (min-width: 768px) {
   .grid-cols-2 {
     grid-template-columns: 1fr 1fr;
@@ -46,7 +45,6 @@
   }
 }
 
-/* Estilo de subtítulos */
 h2 {
   color: #ff6666;
   margin-bottom: 1rem;
@@ -57,25 +55,24 @@ h2 {
 .grid div li {
   margin-bottom: 1rem;
   line-height: 1.6;
-  word-wrap: break-word; /* Rompe palabras largas automáticamente */
+  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-/* Ajustes para la versión móvil */
 @media (max-width: 768px) {
   #Servicios {
     padding: 1rem;
-    overflow-x: hidden; /* Asegura que no haya scroll horizontal */
+    overflow-x: hidden;
   }
 
   .container {
-    padding: 0 0.5rem; /* Reduce el padding lateral en móviles */
+    padding: 0 0.5rem;
   }
 
   #Servicios h1 {
-    font-size: 1.2rem; /* Ajusta el tamaño del h1 */
-    margin: 0 auto; /* Centrado horizontal */
-    margin-top: 70px; /* Ajusta margen superior */
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-top: 70px;
   }
 
   h1 {
@@ -89,12 +86,12 @@ h2 {
   .grid div p,
   .grid div li {
     text-align: left;
-    margin-right: 0.5rem; /* Reduce margen derecho */
-    font-size: 0.875rem; /* Reduce el tamaño de fuente */
-    line-height: 1.5; /* Espaciado entre líneas adecuado */
+    margin-right: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
   }
 
   .grid {
-    gap: 1.5rem; /* Reduce espacio entre filas en móviles */
+    gap: 1.5rem;
   }
 }
