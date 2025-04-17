@@ -29,3 +29,4 @@ function QuienSoy() {
     </section>
   );
 }
+export default QuienSoy;
