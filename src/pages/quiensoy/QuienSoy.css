@@ -1,7 +1,7 @@
 .quiensoy-section {
   margin-top: 70px; /* Espaciado superior de la sección */
   margin-bottom: 50px; /* Espaciado inferior para separar del footer */
-  overflow-x: hidden;
+  overflow-x: hidden; /* Evita el scroll horizontal */
   width: 100%;
   text-align: center; /* Centra el contenido por defecto */
 }
@@ -40,9 +40,9 @@
 }
 
 .quiensoy-section p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto; /* Habilita guiones automáticos para cortes de palabras */
+  word-wrap: break-word; /* Rompe palabras largas */
+  overflow-wrap: break-word; /* Compatibilidad adicional */
+  hyphens: auto; /* Habilita guiones automáticos */
   line-height: 1.8; /* Mejora la legibilidad */
   margin: 20px auto; /* Margen superior e inferior */
   padding: 0 1rem; /* Espaciado interno para el texto */
@@ -54,6 +54,7 @@
   .quiensoy-section {
     margin-top: 70px;
     margin-bottom: 40px; /* Ajusta el espaciado inferior para móviles */
+    overflow-x: hidden; /* Previene scroll horizontal en móviles */
   }
 
   .quiensoy-section h2 {
@@ -63,7 +64,7 @@
   }
 
   .image-container {
-    max-width: 80%;
+    max-width: 80%; /* Asegura que las imágenes no se desborden */
     margin-bottom: 1.5rem; /* Añade más separación inferior */
   }
 
@@ -71,7 +72,7 @@
     font-size: 0.875rem; /* Tamaño de texto reducido para móviles */
     line-height: 1.6; /* Ajusta el espaciado entre líneas */
     padding: 0 10px; /* Espaciado interno adicional */
-    margin-right: 1.5rem; /* Añade margen adicional a la derecha */
+    margin-right: 0; /* Elimina margen adicional para prevenir desbordes */
   }
 }
 
@@ -111,6 +112,6 @@
     line-height: 1.8; /* Espaciado entre líneas mayor */
     margin-top: 30px; /* Separación del texto con las imágenes */
     margin-bottom: 30px; /* Separación del texto con el footer */
-    margin-right: 0.5rem; /* Ajusta el margen derecho */
+    margin-right: 0; /* Elimina margen adicional */
   }
 }
