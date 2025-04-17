@@ -42,7 +42,7 @@
 .quiensoy-section p {
   word-wrap: break-word; /* Rompe palabras largas */
   overflow-wrap: break-word; /* Compatibilidad adicional */
-  hyphens: auto; /* Habilita guiones automáticos */
+
   line-height: 1.8; /* Mejora la legibilidad */
   margin: 20px auto; /* Margen superior e inferior */
   padding: 0 1rem; /* Espaciado interno para el texto */
@@ -72,7 +72,7 @@
     font-size: 0.875rem; /* Tamaño de texto reducido para móviles */
     line-height: 1.6; /* Ajusta el espaciado entre líneas */
     padding: 0 10px; /* Espaciado interno adicional */
-    margin-right: 0; /* Elimina margen adicional para prevenir desbordes */
+    margin-right: 1.5rem; /* Elimina margen adicional para prevenir desbordes */
   }
 }
 
@@ -112,6 +112,6 @@
     line-height: 1.8; /* Espaciado entre líneas mayor */
     margin-top: 30px; /* Separación del texto con las imágenes */
     margin-bottom: 30px; /* Separación del texto con el footer */
-    margin-right: 0; /* Elimina margen adicional */
+    margin-right: 1.5rem; /* Elimina margen adicional */
   }
 }
