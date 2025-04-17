@@ -60,7 +60,7 @@
   
   @media (max-width: 768px) {
     #Servicios h1 {
-      font-size: 1rem; /* Ajusta el tamaño para móviles */
+      font-size: 1.2rem; /* Ajusta el tamaño para móviles */
       margin-right: 1rem; /* Asegura el centrado horizontal */
       margin: 0 auto; /* Asegura el centrado horizontal */
       margin-top: 70px; /* Ajusta margen superior */
@@ -72,7 +72,7 @@
     }
   
     h2 {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   
     .grid div p,.grid div li {
